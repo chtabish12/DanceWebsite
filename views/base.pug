@@ -1,0 +1,21 @@
+//- layout.pug
+doctype html
+html
+  head
+    title Tabish Dance Academy
+    block scripts
+    block style
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="../static/logo.png")
+                div Tabish'sDanceClub 
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+            li #[a(href="/") Services]
+    block content
+    footer#footer 
+        |Copyrites @www.Tabish'sDanceClub.com.pk |All rights reserved

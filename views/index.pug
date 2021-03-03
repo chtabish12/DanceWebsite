@@ -1,0 +1,59 @@
+//- index.pug
+doctype html
+html
+  head
+    title Tabish Dance Academy
+    style
+      include ../static/style.css
+  body
+    
+    nav#navbar
+        ul
+            div#logo
+                img(src="../static/logo.png")
+                div Tabish'sDanceClub 
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+            li #[a(href="/") Services]
+    section#introSection
+        div  Welcome to Tabish's Dance Club 
+        div.small  Eat Sleep Dance Repeat
+    section#missionSection
+        h3 Our Mission
+        .card 
+            h2 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="../static/1.png")
+                div.card-content
+                    p This is the best dance academmy in the world
+        .card 
+            h2 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="../static/2.png")
+                div.card-content
+                    p This is the best dance academmy in the world
+        
+        .card 
+            h2 Expert teaching
+            div.card-box
+                div.card-img
+                    img(src="../static/3.png")
+                div.card-content
+                    p This is the best dance academmy in the world
+        
+    section#sponsorsSection
+        h3 Our Sponsors
+        div#sponsors
+            img(src="../static/logo1.png", alt="Sponsor Image" Class="spImages")
+            img(src="../static/logo2.png", alt="Sponsor Image" Class="spImages")
+            img(src="../static/logo3.png", alt="Sponsor Image" Class="spImages")
+            img(src="../static/logo4.png", alt="Sponsor Image" Class="spImages")
+
+    footer#footer 
+        |Copyrites @www.Tabish'sDanceClub.com.pk |All rights reserved
+    script
+      include ../static/index.js
